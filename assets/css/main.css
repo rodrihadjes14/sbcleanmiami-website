@@ -36,3 +36,14 @@ body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial
   border:1px solid #d1e7dd; background:#edf7f1; color:#0f5132;
   border-radius:6px; font-size:14px;
 }
+
+.form-note{
+  display:flex; align-items:flex-start; gap:8px;
+  margin-top:12px; padding:12px 14px;
+  border:1px solid #a3cfbb; background:#d1e7dd; color:#0f5132;
+  border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.05);
+  font-size:14px; line-height:1.4;
+}
+.form-note .icon{
+  width:18px; height:18px; flex:0 0 18px; fill:currentColor;
+}

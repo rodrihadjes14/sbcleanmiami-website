@@ -76,9 +76,9 @@
     <div class="wrap">
   <h2>Contact Us</h2>
 
-  <!-- Hidden iframe keeps users on your site and lets us redirect to /thank-you.html -->
-  <iframe name="gform_iframe" id="gform_iframe" style="display:none;"
-          onload="if (window.__gformSubmitted) { window.location = '/thank-you.html'; }"></iframe>
+  <!-- Hidden iframe keeps users on your site-->
+  <iframe name="gform_iframe" id="gform_iframe" style="display:none;"></iframe>
+
 
   <form id="lead-form"
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfRH6T1d97ekw0qXA_m_IA_yPztmIEEr1sCWXDbhDOFC9fEGw/formResponse"
@@ -87,9 +87,13 @@
         accept-charset="UTF-8"
         onsubmit="window.__gformSubmitted = true;">
 
-        <div id="form-note" class="form-note" role="status" aria-live="polite" hidden>
-  We will contact you soon.
+       <div id="form-note" class="form-note" role="status" aria-live="polite" tabindex="-1" hidden>
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M9 16.17l-3.88-3.88a1 1 0 10-1.41 1.41l4.59 4.59a1 1 0 001.41 0l9.59-9.59a1 1 0 10-1.41-1.41L9 16.17z"/>
+  </svg>
+  <span>We will contact you soon.</span>
 </div>
+
 
 
     <div class="form-grid">
@@ -223,6 +227,8 @@
     if (note) {
       note.textContent = 'We will contact you soon.';
       note.hidden = false;
+      note.focus();
+      note.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   });
 })();

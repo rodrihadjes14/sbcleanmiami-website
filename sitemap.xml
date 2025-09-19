@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url><loc>https://www.sbcleanmiami.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Services hub + pages -->
+  <url><loc>https://www.sbcleanmiami.com/services/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.sbcleanmiami.com/services/carpet-cleaning.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/upholstery-cleaning.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/rug-cleaning.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/pet-odor-removal.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/mattress-cleaning.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/air-duct-cleaning.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/services/water-damage-restoration.html</loc></url>
+
+  <!-- Areas hub + first cities (add more as you publish them) -->
+  <url><loc>https://www.sbcleanmiami.com/areas/</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/areas/miami.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/areas/boca-raton.html</loc></url>
+
+  <!-- Blog (keep even if empty for now) -->
+  <url><loc>https://www.sbcleanmiami.com/blog/</loc></url>
+
+  <!-- Legal -->
+  <url><loc>https://www.sbcleanmiami.com/legal/privacy.html</loc></url>
+  <url><loc>https://www.sbcleanmiami.com/legal/terms.html</loc></url>
+</urlset>
