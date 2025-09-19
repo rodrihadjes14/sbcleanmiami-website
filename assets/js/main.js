@@ -104,17 +104,33 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Footer phone/email click tracking (works even if GA loads async)
 document.addEventListener('DOMContentLoaded', () => {
   const tel = document.getElementById('tel-link');
   const email = document.getElementById('email-link');
-  if (tel && window.gtag) {
+
+  function sendGA(name, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    } else {
+      // GA may not be ready yet; try shortly after
+      setTimeout(() => {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', name, params);
+        }
+      }, 500);
+    }
+  }
+
+  if (tel) {
     tel.addEventListener('click', () => {
-      gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
+      sendGA('click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
     });
   }
-  if (email && window.gtag) {
+  if (email) {
     email.addEventListener('click', () => {
-      gtag('event', 'click_email', { event_category: 'engagement', event_label: 'footer_email' });
+      sendGA('click_email', { event_category: 'engagement', event_label: 'footer_email' });
     });
   }
 });
+
