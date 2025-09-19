@@ -76,30 +76,46 @@
     <div class="wrap">
   <h2>Contact Us</h2>
 
+  <!-- Hidden iframe keeps users on your site and lets us redirect to /thank-you.html -->
+  <iframe name="gform_iframe" id="gform_iframe" style="display:none;"
+          onload="if (window.__gformSubmitted) { window.location = '/thank-you.html'; }"></iframe>
+
   <form id="lead-form"
-        action="#"            <!-- TEMP: we'll wire this in the next step -->
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfRH6T1d97ekw0qXA_m_IA_yPztmIEEr1sCWXDbhDOFC9fEGw/formResponse"
         method="POST"
+        target="gform_iframe"
         accept-charset="UTF-8"
-        novalidate>
+        onsubmit="window.__gformSubmitted = true;">
+
+        <div id="form-note" class="form-note" role="status" aria-live="polite" hidden>
+  We will contact you soon.
+</div>
+
+
     <div class="form-grid">
+      <!-- Full Name -->
       <label>Full Name
-        <input name="name" required placeholder="Your name">
+        <input name="entry.1820962432" required placeholder="Your name">
       </label>
 
+      <!-- Phone -->
       <label>Phone
-        <input name="phone" required placeholder="(305) 123-4567">
+        <input name="entry.1462304491" required placeholder="(305) 123-4567">
       </label>
 
+      <!-- Email -->
       <label>Email
-        <input type="email" name="email" placeholder="you@example.com">
+        <input type="email" name="entry.1622261796" placeholder="you@example.com">
       </label>
 
+      <!-- ZIP Code -->
       <label>ZIP Code
-        <input name="zip" placeholder="33101">
+        <input name="entry.117450539" placeholder="33101">
       </label>
 
+      <!-- Service -->
       <label>Service
-        <select name="service" required>
+        <select name="entry.1390946669" required>
           <option value="">Select a service…</option>
           <option>Carpet Cleaning</option>
           <option>Upholstery Cleaning</option>
@@ -111,7 +127,7 @@
         </select>
       </label>
 
-      <!-- Honeypot (anti-bot) -->
+      <!-- Honeypot (ignored by Google Forms; helps reduce bot spam) -->
       <div class="honeypot" aria-hidden="true">
         <label>Website <input name="website" tabindex="-1" autocomplete="off"></label>
       </div>
@@ -120,6 +136,7 @@
     </div>
   </form>
 </div>
+
 
   
   
@@ -159,6 +176,58 @@
     // Year in footer
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
   <script src="/assets/js/main.js"></script>
+
+  <script>
+// Inline success message (no redirect)
+(function () {
+  const form = document.getElementById('lead-form');
+  const note = document.getElementById('form-note');
+  const iframe = document.getElementById('gform_iframe');
+  const submitBtn = form.querySelector('[type="submit"]');
+
+  // Ensure correct posting setup (defensive)
+  form.setAttribute('method', 'POST');
+  form.setAttribute('target', 'gform_iframe');
+
+  form.addEventListener('submit', function () {
+    // mark that this load event corresponds to a submit
+    window.__gformSubmitted = true;
+
+    // UX: disable button while “sending”
+    if (submitBtn) {
+      submitBtn.dataset.prevText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+    }
+
+    // hide previous note (if any)
+    if (note) note.hidden = true;
+  });
+
+  // When the hidden iframe loads (Google confirms the response page),
+  // show the success note and reset the form.
+  iframe.addEventListener('load', function () {
+    if (!window.__gformSubmitted) return; // ignore unrelated loads
+
+    // Reset state
+    window.__gformSubmitted = false;
+    if (form) form.reset();
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = submitBtn.dataset.prevText || 'Get a Free Quote';
+    }
+
+    // Show confirmation message
+    if (note) {
+      note.textContent = 'We will contact you soon.';
+      note.hidden = false;
+    }
+  });
+})();
+</script>
+
+
 </body>
 </html>
