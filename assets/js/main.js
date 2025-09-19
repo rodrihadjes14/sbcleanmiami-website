@@ -97,13 +97,16 @@ document.addEventListener('click', (ev) => {
     }
 
     // GA4 lead event
+// GA4 lead event (TEMP debug)
 if (window.gtag) {
   gtag('event', 'generate_lead', {
     event_category: 'lead',
     event_label: 'contact_form',
-    value: 1
+    value: 1,
+    debug_mode: true
   });
 }
+
 
   });
 })();
