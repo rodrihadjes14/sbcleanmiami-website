@@ -15,6 +15,16 @@
   <meta property="og:image" content="/images/og-default.jpg" />
 
   <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5FCPPRNBKJ', { 'anonymize_ip': true });
+</script>
+
 </head>
 <body>
   <header class="site-header">
@@ -183,56 +193,7 @@
 
   <script src="/assets/js/main.js"></script>
 
-  <script>
-// Inline success message (no redirect)
-(function () {
-  const form = document.getElementById('lead-form');
-  const note = document.getElementById('form-note');
-  const iframe = document.getElementById('gform_iframe');
-  const submitBtn = form.querySelector('[type="submit"]');
 
-  // Ensure correct posting setup (defensive)
-  form.setAttribute('method', 'POST');
-  form.setAttribute('target', 'gform_iframe');
-
-  form.addEventListener('submit', function () {
-    // mark that this load event corresponds to a submit
-    window.__gformSubmitted = true;
-
-    // UX: disable button while “sending”
-    if (submitBtn) {
-      submitBtn.dataset.prevText = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
-    }
-
-    // hide previous note (if any)
-    if (note) note.hidden = true;
-  });
-
-  // When the hidden iframe loads (Google confirms the response page),
-  // show the success note and reset the form.
-  iframe.addEventListener('load', function () {
-    if (!window.__gformSubmitted) return; // ignore unrelated loads
-
-    // Reset state
-    window.__gformSubmitted = false;
-    if (form) form.reset();
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.textContent = submitBtn.dataset.prevText || 'Get a Free Quote';
-    }
-
-    // Show confirmation message
-    if (note) {
-      note.textContent = 'We will contact you soon.';
-      note.hidden = false;
-      note.focus();
-      note.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  });
-})();
-</script>
 
 
 </body>
