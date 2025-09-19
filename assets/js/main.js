@@ -103,3 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tel = document.getElementById('tel-link');
+  const email = document.getElementById('email-link');
+  if (tel && window.gtag) {
+    tel.addEventListener('click', () => {
+      gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
+    });
+  }
+  if (email && window.gtag) {
+    email.addEventListener('click', () => {
+      gtag('event', 'click_email', { event_category: 'engagement', event_label: 'footer_email' });
+    });
+  }
+});

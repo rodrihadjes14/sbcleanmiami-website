@@ -47,3 +47,7 @@ body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial
 .form-note .icon{
   width:18px; height:18px; flex:0 0 18px; fill:currentColor;
 }
+
+
+.nap { font-style: normal; line-height: 1.5; }
+.nap a { text-decoration: none; }
