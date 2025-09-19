@@ -26,3 +26,7 @@ body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial
 @media (min-width: 900px) {
   .gform-embed { min-height: 900px; }
 }
+
+.form-grid { display:grid; gap:12px; max-width:560px; }
+.form-grid input, .form-grid select, .form-grid textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:6px; }
+.honeypot { position:absolute; left:-5000px; }

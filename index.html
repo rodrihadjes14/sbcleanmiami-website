@@ -72,19 +72,58 @@
   </section>
 
   <section id="contact" class="contact">
+
     <div class="wrap">
   <h2>Contact Us</h2>
-  <!-- Replace FORM_EMBED_SRC with your real Google Form embed URL -->
-  <iframe
-    class="gform-embed"
-    src="https://docs.google.com/forms/d/e/1FAIpQLSfRH6T1d97ekw0qXA_m_IA_yPztmIEEr1sCWXDbhDOFC9fEGw/viewform?usp=header"
-    width="100%"
-    height="1200"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0"
-  >Loading…</iframe>
-  <p style="margin-top:12px">Having trouble? <a href="FORM_EMBED_SRC" target="_blank" rel="noopener">Open the form in a new tab</a>.</p>
+
+  <form id="lead-form"
+        action="#"            <!-- TEMP: we'll wire this in the next step -->
+        method="POST"
+        accept-charset="UTF-8"
+        novalidate>
+    <div class="form-grid">
+      <label>Full Name
+        <input name="name" required placeholder="Your name">
+      </label>
+
+      <label>Phone
+        <input name="phone" required placeholder="(305) 123-4567">
+      </label>
+
+      <label>Email
+        <input type="email" name="email" placeholder="you@example.com">
+      </label>
+
+      <label>ZIP Code
+        <input name="zip" placeholder="33101">
+      </label>
+
+      <label>Service
+        <select name="service" required>
+          <option value="">Select a service…</option>
+          <option>Carpet Cleaning</option>
+          <option>Upholstery Cleaning</option>
+          <option>Rug Cleaning</option>
+          <option>Pet Odor Removal</option>
+          <option>Mattress Cleaning</option>
+          <option>Air Duct Cleaning</option>
+          <option>Water Damage Restoration</option>
+        </select>
+      </label>
+
+      <!-- Honeypot (anti-bot) -->
+      <div class="honeypot" aria-hidden="true">
+        <label>Website <input name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <button class="cta" type="submit">Get a Free Quote</button>
+    </div>
+  </form>
+</div>
+
+  
+  
+  
 </div>
 
   </section>
