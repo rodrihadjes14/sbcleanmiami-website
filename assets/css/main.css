@@ -232,3 +232,33 @@ details[open] > .mega-panel { display: block; }
 .nav details.mega.compact > .mega-panel:hover::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;              /* slate-400 on hover */
 }
+
+
+/* Compact Services dropdown: visible thin rail on hover + native scrollbars */
+.nav details.mega.compact > .mega-panel {
+  max-height: 70vh;               /* ensure overflow can happen */
+  overflow: auto;
+  scrollbar-gutter: stable both-edges;  /* avoid layout shift when scrollbars appear */
+}
+
+/* Firefox: show a thin native scrollbar on hover */
+.nav details.mega.compact > .mega-panel:hover {
+  scrollbar-width: thin;                 /* FF only */
+  scrollbar-color: #cbd5e1 transparent;  /* thumb | track */
+}
+
+/* WebKit (Chrome/Safari/Edge): system may hide native bars; add a hover "rail" */
+.nav details.mega.compact > .mega-panel::after {
+  content: "";
+  position: absolute;
+  right: 2px; top: 8px; bottom: 8px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #cbd5e1, #94a3b8);
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+  pointer-events: none;  /* does not block clicks/scroll */
+}
+.nav details.mega.compact > .mega-panel:hover::after {
+  opacity: .9; /* show the thin rail when hovered */
+}
