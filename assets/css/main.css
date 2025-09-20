@@ -333,4 +333,15 @@ details[open] > .mega-panel { display: block; }
 .footer-areas a:hover { text-decoration: underline; }
 @media (max-width: 800px) { .footer-areas .areas-grid { grid-template-columns: 1fr; } }
 
+/* Home overview block */
+.overview { padding: 28px 0; }
+.overview h2 { margin: 0 0 12px; }
+.overview h3 { margin: 16px 0 8px; font-size: 18px; }
+.overview p { margin: 0 0 10px; }
+.link-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px 24px; }
+.link-grid ul { list-style: none; margin: 0; padding: 0; }
+.link-grid li { margin: 4px 0; }
+.link-grid a { text-decoration: none; color: inherit; }
+.link-grid a:hover { text-decoration: underline; }
+@media (max-width: 900px){ .link-grid { grid-template-columns: 1fr; } }
 
