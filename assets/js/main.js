@@ -104,11 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Footer phone/email click tracking (works even if GA loads async)
+/
+// Footer phone/email + Google Review CTA tracking (robust to async GA load)
 document.addEventListener('DOMContentLoaded', () => {
-  const tel = document.getElementById('tel-link');
-  const email = document.getElementById('email-link');
-
   function sendGA(name, params) {
     if (typeof window.gtag === 'function') {
       window.gtag('event', name, params);
@@ -122,15 +120,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Phone click
+  const tel = document.getElementById('tel-link');
   if (tel) {
     tel.addEventListener('click', () => {
       sendGA('click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
     });
   }
+
+  // Email click
+  const email = document.getElementById('email-link');
   if (email) {
     email.addEventListener('click', () => {
       sendGA('click_email', { event_category: 'engagement', event_label: 'footer_email' });
     });
   }
+
+  // Review CTA clicks (footer + contact section)
+  const reviewLinks = [
+    document.getElementById('review-link'),
+    document.getElementById('contact-review-link')
+  ].filter(Boolean);
+
+  reviewLinks.forEach((el) => {
+    el.addEventListener('click', () => {
+      sendGA('click_review', { event_category: 'engagement', event_label: el.id || 'review_link' });
+    });
+  });
 });
+
 
