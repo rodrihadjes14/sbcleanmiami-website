@@ -165,3 +165,29 @@ details[open] > .mega-panel { display: block; }
 
 /* Close the menu when tabbing past it (focus styles remain your default) */
 .mega-panel:focus-within, .nav details:focus-within { outline: none; }
+
+
+/* --- Compact dropdown variant --- */
+.nav details.mega.compact { position: relative; }
+.nav details.mega.compact > .mega-panel {
+  position: absolute;
+  right: 0; left: auto; top: 100%;
+  width: 340px; max-height: 70vh; overflow: auto;
+  display: none; margin-top: 8px; z-index: 1000;
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08); padding: 12px;
+}
+.nav details.mega.compact[open] > .mega-panel { display: block; }
+
+/* turn the 3-column grid into a single column list */
+.nav details.mega.compact .mega-grid { display: block; }
+.nav details.mega.compact .mega-col { padding: 6px 0; }
+.nav details.mega.compact .mega-col + .mega-col { border-top: 1px solid #f1f5f9; margin-top: 6px; }
+.nav details.mega.compact .mega-col h3 { font-size: 14px; margin: 4px 0 6px; color: #0f172a; }
+.nav details.mega.compact .mega-col ul { list-style: none; margin: 0; padding: 0; }
+.nav details.mega.compact .mega-col li { margin: 4px 0; }
+.nav details.mega.compact .mega-col a { display: block; padding: 4px 0; text-decoration: none; color: #0f172a; }
+.nav details.mega.compact .mega-col a:hover { text-decoration: underline; }
+
+/* keep header height stable */
+.site-header { position: relative; z-index: 10; }
