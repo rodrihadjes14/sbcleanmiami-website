@@ -104,49 +104,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/
+
 // Footer phone/email + Google Review CTA tracking (robust to async GA load)
 document.addEventListener('DOMContentLoaded', () => {
   function sendGA(name, params) {
+    const payload = Object.assign({ transport_type: 'beacon' }, params || {});
     if (typeof window.gtag === 'function') {
-      window.gtag('event', name, params);
+      window.gtag('event', name, payload);
     } else {
-      // GA may not be ready yet; try shortly after
       setTimeout(() => {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', name, params);
-        }
+        if (typeof window.gtag === 'function') window.gtag('event', name, payload);
       }, 500);
     }
   }
 
-  // Phone click
+  // Phone
   const tel = document.getElementById('tel-link');
-  if (tel) {
-    tel.addEventListener('click', () => {
-      sendGA('click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
-    });
-  }
+  if (tel) tel.addEventListener('click', () => {
+    sendGA('click_to_call', { event_category: 'engagement', event_label: 'footer_tel' });
+  });
 
-  // Email click
+  // Email
   const email = document.getElementById('email-link');
-  if (email) {
-    email.addEventListener('click', () => {
-      sendGA('click_email', { event_category: 'engagement', event_label: 'footer_email' });
-    });
-  }
+  if (email) email.addEventListener('click', () => {
+    sendGA('click_email', { event_category: 'engagement', event_label: 'footer_email' });
+  });
 
-  // Review CTA clicks (footer + contact section)
-  const reviewLinks = [
-    document.getElementById('review-link'),
-    document.getElementById('contact-review-link')
-  ].filter(Boolean);
-
-  reviewLinks.forEach((el) => {
+  // Review links on ANY page (use class selector)
+  document.querySelectorAll('a.review-link').forEach((el) => {
     el.addEventListener('click', () => {
-      sendGA('click_review', { event_category: 'engagement', event_label: el.id || 'review_link' });
+      sendGA('click_review', {
+        event_category: 'engagement',
+        event_label: el.id || 'review_link'
+      });
     });
   });
 });
+
 
 
