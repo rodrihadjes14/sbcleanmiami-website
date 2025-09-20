@@ -319,5 +319,18 @@ details[open] > .mega-panel { display: block; }
 /* Ensure header itself doesn't expand */
 .site-header { position: relative; z-index: 10; }
 
+/* --- Footer Areas block --- */
+.footer-areas { margin: 16px 0 20px; }
+.footer-areas h2 { position: absolute; left: -9999px; } /* visually hidden */
+.footer-areas h3 { margin: 0 0 8px; font-size: 15px; }
+.footer-areas .areas-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 24px;
+}
+.footer-areas ul { margin: 0; padding: 0; list-style: none; }
+.footer-areas li { margin: 4px 0; }
+.footer-areas a { color: inherit; text-decoration: none; }
+.footer-areas a:hover { text-decoration: underline; }
+@media (max-width: 800px) { .footer-areas .areas-grid { grid-template-columns: 1fr; } }
 
 
