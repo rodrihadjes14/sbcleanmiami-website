@@ -16,48 +16,14 @@
 
   <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <!-- Google tag (gtag.js) + call-click tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
-<script>
-(function () {
-  // GA4 base
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ window.dataLayer.push(arguments); }
-  window.gtag = window.gtag || gtag;
-
-  gtag('js', new Date());
-  gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
-
-  // call-click tracking (works with or without GTM)
-  function emitCallEvent(target) {
-    var href = (target.getAttribute('href') || '').trim();   // e.g., tel:+17865834811
-    var id   = target.id || '';
-    var loc  = id === 'call-fab' ? 'floating_button'
-             : id === 'tel-link' ? 'footer_link'
-             : 'link';
-
-    if (Array.isArray(window.dataLayer)) {
-      window.dataLayer.push({ event: 'click_call', method: 'tel', phone: href, location: loc });
-    }
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'click_call', { method: 'tel', phone: href, location: loc });
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var fab = document.getElementById('call-fab');
-    if (fab) fab.addEventListener('click', function () { emitCallEvent(fab); });
-
-    var links = document.querySelectorAll('a[href^="tel:"]');
-    links.forEach(function (a) {
-      if (a !== fab) a.addEventListener('click', function () { emitCallEvent(a); });
-    });
-  });
-})();
-</script>
-
-
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -172,15 +138,6 @@
       <small>© <span id="y"></span> Smart Brite Cleaning Services. All rights reserved.</small>
     </div>
   </footer>
-
-  <!-- Floating Call Button -->
-<a id="call-fab" class="call-fab" href="tel:+17865834811" aria-label="Call Smart Brite">
-  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
-  </svg>
-  <span class="sr-only">Call (786) 583-4811</span>
-</a>
-
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
