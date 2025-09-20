@@ -259,6 +259,41 @@ details[open] > .mega-panel { display: block; }
   transition: opacity .15s ease-in-out;
   pointer-events: none;  /* does not block clicks/scroll */
 }
-.nav details.mega.compact > .mega-panel:hover::after {
-  opacity: .9; /* show the thin rail when hovered */
+
+/* Compact Services dropdown: only the native moving thumb on hover */
+.nav details.mega.compact > .mega-panel {
+  max-height: 70vh;
+  overflow: auto;
+  scrollbar-gutter: stable both-edges;
+  /* Default: hide native bars */
+  scrollbar-width: none;              /* Firefox */
+  -ms-overflow-style: none;           /* IE/Edge legacy */
 }
+.nav details.mega.compact > .mega-panel:hover {
+  /* On hover: show a thin thumb with transparent track */
+  scrollbar-width: thin;              /* Firefox only */
+  scrollbar-color: #94a3b8 transparent;
+}
+
+/* WebKit (Chrome/Safari/Edge) */
+.nav details.mega.compact > .mega-panel::-webkit-scrollbar {
+  width: 0; height: 0;                /* hidden by default */
+}
+.nav details.mega.compact > .mega-panel:hover::-webkit-scrollbar {
+  width: 8px; height: 8px;            /* appear on hover */
+}
+.nav details.mega.compact > .mega-panel::-webkit-scrollbar-track {
+  background: transparent;            /* no static dark rail */
+}
+.nav details.mega.compact > .mega-panel::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.nav details.mega.compact > .mega-panel:hover::-webkit-scrollbar-thumb {
+  background: #94a3b8;                /* clearer on hover */
+}
+
+
+
