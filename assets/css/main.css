@@ -296,4 +296,28 @@ details[open] > .mega-panel { display: block; }
 }
 
 
+/* FIX: Services dropdown overlays; does NOT change header height */
+.nav details.mega.compact { position: relative; }  /* positioning context */
+.nav details.mega.compact > .mega-panel {
+  position: absolute !important;   /* take out of document flow */
+  top: 100%; right: 0; left: auto;
+  width: 340px;
+  max-height: 70vh;
+  margin-top: 8px;
+  display: none;                   /* only visible when open */
+  overflow: auto;
+  z-index: 1000;
+
+  /* visual styles */
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+.nav details.mega.compact[open] > .mega-panel { display: block; }
+
+/* Ensure header itself doesn't expand */
+.site-header { position: relative; z-index: 10; }
+
+
 
