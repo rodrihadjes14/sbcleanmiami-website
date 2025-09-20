@@ -55,3 +55,33 @@ body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial
 
 .review-link { font-weight: 600; }
 .review-cta { margin-top: 0.5rem; }
+
+
+/* Floating Call Button */
+.call-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #0a84ff;           /* adjust to brand color if needed */
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(0,0,0,.25);
+  text-decoration: none;
+  z-index: 9999;
+}
+.call-fab:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.call-fab:active { transform: translateY(0); }
+.call-fab svg { fill: currentColor; }
+
+/* (Optional) hide on very wide desktops if you prefer mobile-only */
+/* @media (min-width: 1024px) { .call-fab { display:none; } } */
+
+/* Screen-reader only helper */
+.sr-only {
+  position:absolute !important;
+  width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,1,1);white-space:nowrap;border:0;
+}

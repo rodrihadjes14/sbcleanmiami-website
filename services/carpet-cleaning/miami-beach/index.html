@@ -67,18 +67,6 @@
     <p><a href="/carpet-cleaning/" class="cta secondary">← Back to Carpet Cleaning (All Areas)</a></p>
   </section>
 
-  <section class="wrap" style="padding:24px 0;">
-  <h2>Nearby Cities We Also Serve</h2>
-  <ul class="grid-3">
-    <li><a href="/carpet-cleaning/miami/">Miami</a></li>
-    <li><a href="/carpet-cleaning/sunny-isles/">Sunny Isles</a></li>
-    <li><a href="/carpet-cleaning/aventura/">Aventura</a></li>
-    <li><a href="/carpet-cleaning/hollywood/">Hollywood</a></li>
-    <li><a href="/carpet-cleaning/pembroke-pines/">Pembroke Pines</a></li>
-  </ul>
-  </section>
-
-
   <section class="faq">
     <div class="wrap">
       <h2>Miami Beach Carpet Cleaning — FAQs</h2>
@@ -90,4 +78,94 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <addres
+      <address class="nap">
+        <strong>Smart Brite Cleaning Services</strong><br>
+        Miami, FL • Service Area: Kendall → Boca Raton<br>
+        <a href="tel:+17865834811" id="tel-link">(786) 583-4811</a> •
+        <a href="mailto:info@sbcleanmiami.com" id="email-link">info@sbcleanmiami.com</a> •
+        <a id="review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a><br>
+        Mon–Mon 8:00AM–9:00PM
+      </address>
+      <small>© <span id="y"></span> Smart Brite Cleaning Services. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Floating Call Button -->
+<a id="call-fab" class="call-fab" href="tel:+17865834811" aria-label="Call Smart Brite">
+  <!-- Simple phone icon (SVG) -->
+  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
+  </svg>
+  <span class="sr-only">Call (786) 583-4811</span>
+</a>
+
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "serviceType":"Carpet cleaning",
+    "name":"Carpet Cleaning in Miami Beach, FL",
+    "provider":{"@type":"LocalBusiness","name":"Smart Brite Cleaning Services","url":"https://sbcleanmiami.com/"},
+    "areaServed":"Miami Beach, FL",
+    "url":"https://sbcleanmiami.com/carpet-cleaning/miami-beach/",
+    "description":"Eco-friendly carpet cleaning with fast drying in Miami Beach, FL."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do you service high-rise condos?","acceptedAnswer":{"@type":"Answer","text":"Yes—our equipment and processes are condo-friendly (building access rules may apply)."}},
+      {"@type":"Question","name":"How soon can you schedule in Miami Beach?","acceptedAnswer":{"@type":"Answer","text":"Most appointments are available within 24–48 hours."}},
+      {"@type":"Question","name":"Do you remove pet odors?","acceptedAnswer":{"@type":"Answer","text":"Yes—enzyme treatments available for urine and odor removal."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbcleanmiami.com/"},
+      {"@type":"ListItem","position":2,"name":"Carpet Cleaning","item":"https://sbcleanmiami.com/carpet-cleaning/"},
+      {"@type":"ListItem","position":3,"name":"Miami Beach","item":"https://sbcleanmiami.com/carpet-cleaning/miami-beach/"}
+    ]
+  }
+  </script>
+
+  <script>
+(function () {
+  function sendAnalytics(eventName, params) {
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+      // Google Tag Manager
+      window.dataLayer.push(Object.assign({ event: eventName }, params));
+    } else if (typeof window.gtag === 'function') {
+      // GA4 gtag.js
+      window.gtag('event', eventName, params);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('call-fab');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      // Event name: click_call  (keep naming consistent across your site)
+      sendAnalytics('click_call', {
+        method: 'tel',
+        location: 'floating_button',
+        phone: '+17865834811'
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
