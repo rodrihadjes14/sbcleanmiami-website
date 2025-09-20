@@ -142,4 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Review links on ANY page (use class selector)
+document.querySelectorAll('a.review-link').forEach((el) => {
+  el.addEventListener('click', () => {
+    // TEMP: debug + console so we can see it fire
+    sendGA('click_review', {
+      event_category: 'engagement',
+      event_label: el.id || 'review_link',
+      debug_mode: true
+    });
+    console.log('click_review fired:', el.href);
+  });
+});
 
