@@ -352,4 +352,50 @@ details[open] > .mega-panel { display: block; }
 .breadcrumb a { text-decoration: none; }
 .breadcrumb [aria-current="page"] { color: inherit; font-weight: 600; text-decoration: none; }
 
+/* Ensure the header wrapper is a positioning context */
+.site-header .wrap {
+  position: relative;
+}
+
+/* Top-right phone link (desktop) */
+.header-tel {
+  position: absolute;
+  top: 12px;          /* adjust to align with your header height */
+  right: 16px;
+  font-weight: 600;   /* match your brand text weight; change to 500/400 if needed */
+  text-decoration: none;
+  line-height: 1;
+  display: inline-block;
+  padding: 8px 10px;  /* small hit area for accessibility */
+  border-radius: 6px; /* subtle rounding */
+}
+
+/* Hover/focus states */
+.header-tel:hover,
+.header-tel:focus {
+  text-decoration: underline;
+}
+
+/* Make sure it sits above any dropdowns if needed */
+.header-tel {
+  z-index: 10;
+}
+
+/* Mobile treatment (stack if header is tall/narrow) */
+@media (max-width: 768px) {
+  .header-tel {
+    top: 10px;
+    right: 12px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+}
+
+/* If your header becomes multi-line on very small screens,
+   you can switch to in-flow layout for perfect wrapping. Optional: */
+@media (max-width: 480px) {
+  .site-header .wrap {
+    padding-right: 110px; /* reserves space so the phone link doesn’t overlap */
+  }
+}
 
