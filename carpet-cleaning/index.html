@@ -4,254 +4,317 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Carpet Cleaning | Smart Brite Cleaning Services</title>
-  <meta name="description" content="Eco-friendly carpet cleaning with fast drying times for homes and businesses across Miami Metro. Affordable packages. Free quotes." />
+  <title>Carpet Cleaning | Miami Metro Steam & Deep Cleaning | Smart Brite</title>
+  <!-- SEO: primary umbrella intent 'carpet cleaning' + metro qualifier; brand at end -->
+
+  <meta name="description" content="Professional carpet cleaning across the Miami metro. Steam & deep cleaning, eco-friendly solutions, fast drying, pet odor & stain removal. Licensed & insured. Free quotes." />
   <link rel="canonical" href="https://sbcleanmiami.com/carpet-cleaning/" />
 
   <meta property="og:title" content="Carpet Cleaning | Smart Brite Cleaning Services" />
-  <meta property="og:description" content="Eco-friendly, fast-dry carpet cleaning across the Miami metro. Free quotes." />
+  <meta property="og:description" content="Eco-friendly, fast-dry carpet cleaning across the Miami metro. Steam cleaning, pet odor removal, transparent pricing. Free quotes." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://sbcleanmiami.com/carpet-cleaning/" />
   <meta property="og:image" content="/images/og-default.jpg" />
 
   <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <!-- Google tag (gtag.js) + call-click tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
-<script>
-(function () {
-  // GA4 base
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ window.dataLayer.push(arguments); }
-  window.gtag = window.gtag || gtag;
+  <!-- Google tag (gtag.js) + call-click tracking (preserved) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
+  <script>
+  (function () {
+    // GA4 base
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    window.gtag = window.gtag || gtag;
 
-  gtag('js', new Date());
-  gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
+    gtag('js', new Date());
+    gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
 
-  // call-click tracking (works with or without GTM)
-  function emitCallEvent(target) {
-    var href = (target.getAttribute('href') || '').trim();   // e.g., tel:+17865834811
-    var id   = target.id || '';
-    var loc  = id === 'call-fab' ? 'floating_button'
-             : id === 'tel-link' ? 'footer_link'
-             : 'link';
+    // call-click tracking (works with or without GTM)
+    function emitCallEvent(target) {
+      var href = (target.getAttribute('href') || '').trim();   // e.g., tel:+17865834811
+      var id   = target.id || '';
+      var loc  = id === 'call-fab' ? 'floating_button'
+               : id === 'tel-link' ? 'footer_link'
+               : 'link';
 
-    if (Array.isArray(window.dataLayer)) {
-      window.dataLayer.push({ event: 'click_call', method: 'tel', phone: href, location: loc });
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: 'click_call', method: 'tel', phone: href, location: loc });
+      }
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'click_call', { method: 'tel', phone: href, location: loc });
+      }
     }
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'click_call', { method: 'tel', phone: href, location: loc });
-    }
-  }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var fab = document.getElementById('call-fab');
-    if (fab) fab.addEventListener('click', function () { emitCallEvent(fab); });
+    document.addEventListener('DOMContentLoaded', function () {
+      var fab = document.getElementById('call-fab');
+      if (fab) fab.addEventListener('click', function () { emitCallEvent(fab); });
 
-    var links = document.querySelectorAll('a[href^="tel:"]');
-    links.forEach(function (a) {
-      if (a !== fab) a.addEventListener('click', function () { emitCallEvent(a); });
+      var links = document.querySelectorAll('a[href^="tel:"]');
+      links.forEach(function (a) {
+        if (a !== fab) a.addEventListener('click', function () { emitCallEvent(a); });
+      });
     });
-  });
-})();
-</script>
-
-
-
+  })();
+  </script>
 </head>
 <body>
   <header class="site-header">
-  <div class="wrap">
-    <a class="logo" href="/">Smart Brite Cleaning Services</a>
-    <nav class="nav" aria-label="Primary">
-      <!-- Services compact dropdown -->
-      <details class="mega compact">
-        <summary aria-haspopup="true" aria-expanded="false">Services</summary>
-        <div class="mega-panel" role="menu">
-          <div class="mega-grid">
-            <div class="mega-col">
-              <h3>Carpet Cleaning</h3>
-              <ul>
-                <li><a href="/carpet-cleaning/">All Areas</a></li>
-                <li><a href="/carpet-cleaning-miami/">Miami</a></li>
-                <li><a href="/carpet-cleaning-miami-beach/
-">Miami Beach</a></li>
-                <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
-                <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
-                <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
-                <li><a href="/carpet-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-              </ul>
-            </div>
-            <div class="mega-col">
-              <h3>Upholstery Cleaning</h3>
-              <ul>
-                <li><a href="/upholstery-cleaning/">All Areas</a></li>
-                <li><a href="/upholstery-cleaning-miami/">Miami</a></li>
-                <li><a href="/upholstery-cleaning-miami-beach/">Miami Beach</a></li>
-                <li><a href="/upholstery-cleaning-aventura/">Aventura</a></li>
-                <li><a href="/upholstery-cleaning-sunny-isles/">Sunny Isles</a></li>
-                <li><a href="/upholstery-cleaning-hollywood/">Hollywood</a></li>
-                <li><a href="/upholstery-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-              </ul>
-            </div>
-            <div class="mega-col">
-              <h3>Rug Cleaning</h3>
-              <ul>
-                <li><a href="/rug-cleaning/">All Areas</a></li>
-                <li><a href="/rug-cleaning-miami/">Miami</a></li>
-                <li><a href="/rug-cleaning-miami-beach/">Miami Beach</a></li>
-                <li><a href="/rug-cleaning-aventura/">Aventura</a></li>
-                <li><a href="/rug-cleaning-sunny-isles/">Sunny Isles</a></li>
-                <li><a href="/rug-cleaning-hollywood/">Hollywood</a></li>
-                <li><a href="/rug-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-              </ul>
+    <div class="wrap">
+      <a class="logo" href="/">Smart Brite Cleaning Services</a>
+      <nav class="nav" aria-label="Primary">
+        <!-- Services compact dropdown (preserved) -->
+        <details class="mega compact">
+          <summary aria-haspopup="true" aria-expanded="false">Services</summary>
+          <div class="mega-panel" role="menu">
+            <div class="mega-grid">
+              <div class="mega-col">
+                <h3>Carpet Cleaning</h3>
+                <ul>
+                  <li><a href="/carpet-cleaning/">All Areas</a></li>
+                  <li><a href="/carpet-cleaning-miami/">Miami</a></li>
+                  <li><a href="/carpet-cleaning-miami-beach/">Miami Beach</a></li>
+                  <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
+                  <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
+                  <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
+                  <li><a href="/carpet-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <h3>Upholstery Cleaning</h3>
+                <ul>
+                  <li><a href="/upholstery-cleaning/">All Areas</a></li>
+                  <li><a href="/upholstery-cleaning-miami/">Miami</a></li>
+                  <li><a href="/upholstery-cleaning-miami-beach/">Miami Beach</a></li>
+                  <li><a href="/upholstery-cleaning-aventura/">Aventura</a></li>
+                  <li><a href="/upholstery-cleaning-sunny-isles/">Sunny Isles</a></li>
+                  <li><a href="/upholstery-cleaning-hollywood/">Hollywood</a></li>
+                  <li><a href="/upholstery-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <h3>Rug Cleaning</h3>
+                <ul>
+                  <li><a href="/rug-cleaning/">All Areas</a></li>
+                  <li><a href="/rug-cleaning-miami/">Miami</a></li>
+                  <li><a href="/rug-cleaning-miami-beach/">Miami Beach</a></li>
+                  <li><a href="/rug-cleaning-aventura/">Aventura</a></li>
+                  <li><a href="/rug-cleaning-sunny-isles/">Sunny Isles</a></li>
+                  <li><a href="/rug-cleaning-hollywood/">Hollywood</a></li>
+                  <li><a href="/rug-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </details>
+        </details>
 
-      <a href="/areas/">Service Areas</a>
-      <a href="/blog/">Blog</a>
-      <a href="/#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+        <a href="/areas/">Service Areas</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="hero">
     <div class="wrap">
       <h1>Carpet Cleaning</h1>
-      <p>Eco-friendly products, fast drying, and transparent pricing for homes and businesses across the Miami metro.</p>
+      <!-- SEO: use umbrella keyword + benefits; avoid stuffing -->
+      <p>
+        Get spotless results with <strong>professional carpet cleaning</strong> across the Miami metro—eco-friendly
+        <strong>steam cleaning</strong>, deep fiber rinsing, and targeted <strong>pet odor & stain removal</strong>.
+        Fast-dry service for homes, condos, and businesses with transparent, flat-rate pricing.
+      </p>
       <a class="cta" href="/#contact">Get a Free Quote</a>
     </div>
   </main>
 
   <section class="wrap" style="padding:24px 0;">
     <h2>Areas We Serve for Carpet Cleaning</h2>
+    <!-- SEO: internal links fan out to city pages -->
     <ul class="grid-4">
-    <li><a href="/carpet-cleaning-miami/">Carpet Cleaning in Miami</a></li>
-    <li><a href="/carpet-cleaning-miami-beach/
-">Carpet Cleaning in Miami Beach</a></li>
-    <li><a href="/carpet-cleaning-aventura/">Carpet Cleaning in Aventura</a></li>
-    <li><a href="/carpet-cleaning-sunny-isles/">Carpet Cleaning in Sunny Isles</a></li>
-    <li><a href="/carpet-cleaning-hollywood/">Carpet Cleaning in Hollywood</a></li>
-    <li><a href="/carpet-cleaning-pembroke-pines/">Carpet Cleaning in Pembroke Pines</a></li>
+      <li><a href="/carpet-cleaning-miami/">Carpet Cleaning in Miami</a></li>
+      <li><a href="/carpet-cleaning-miami-beach/">Carpet Cleaning in Miami Beach</a></li>
+      <li><a href="/carpet-cleaning-aventura/">Carpet Cleaning in Aventura</a></li>
+      <li><a href="/carpet-cleaning-sunny-isles/">Carpet Cleaning in Sunny Isles</a></li>
+      <li><a href="/carpet-cleaning-hollywood/">Carpet Cleaning in Hollywood</a></li>
+      <li><a href="/carpet-cleaning-pembroke-pines/">Carpet Cleaning in Pembroke Pines</a></li>
     </ul>
 
-
     <h2>Why Choose Smart Brite</h2>
+    <p>
+      As a Miami-based, <strong>licensed & insured</strong> team, we combine low-residue detergents with high-CFM extraction and a neutralizing rinse so your carpet feels soft—not sticky—and stays cleaner longer.
+      We emphasize reliability, clear communication, and a satisfaction guarantee on every job.
+    </p>
     <ul>
-      <li><strong>Eco-friendly</strong> solutions safe for kids and pets</li>
-      <li><strong>Fast-dry process</strong> to use rooms sooner</li>
-      <li><strong>Upfront, low-cost pricing</strong> with no surprises</li>
+      <li><strong>Eco-friendly</strong> products safe for kids & pets</li>
+      <li><strong>Fast-dry process</strong>—typical dry times 3–6 hours</li>
+      <li><strong>Advanced spotting</strong> for traffic lanes, coffee, and wine</li>
+      <li><strong>Condo & high-rise specialists</strong> with portable, elevator-friendly equipment</li>
+      <li><strong>Commercial carpet cleaning</strong> for offices & retail</li>
     </ul>
 
     <h2>What’s Included</h2>
+    <p>
+      Every appointment includes inspection, fiber-safe pre-spray, agitation where needed, <strong>hot water extraction</strong>, neutralizing rinse, and grooming. We tailor heat, pressure, and passes to carpet fiber and soil level.
+      Optional add-ons: protector application and deodorizing.
+    </p>
     <ul>
-      <li>Pre-inspection & spot testing</li>
-      <li>Deep extraction cleaning</li>
-      <li>Deodorizing on request</li>
+      <li>Pre-inspection & dry soil removal</li>
+      <li>Targeted stain treatment for spots & traffic lanes</li>
+      <li>Steam cleaning (hot water extraction)</li>
+      <li>Neutralizing rinse & grooming</li>
+      <li>Airflow assistance to speed drying</li>
     </ul>
   </section>
 
   <section class="faq">
     <div class="wrap">
       <h2>Carpet Cleaning FAQs</h2>
-      <details><summary>How long does carpet take to dry?</summary><p>Typically 2–6 hours depending on ventilation and humidity.</p></details>
-      <details><summary>Are your products safe for kids and pets?</summary><p>Yes—eco-friendly solutions used as directed.</p></details>
-      <details><summary>Do you remove pet odors and stains?</summary><p>We use targeted enzymes and techniques; results vary by carpet type and severity.</p></details>
+      <details>
+        <summary>How long does carpet take to dry?</summary>
+        <p>Most carpets dry in 3–6 hours depending on ventilation, humidity, and pile density. We use high-CFM extraction and airflow to accelerate drying.</p>
+      </details>
+      <details>
+        <summary>Are your products safe for kids and pets?</summary>
+        <p>Yes. We use eco-friendly detergents and a neutralizing rinse to leave a low-residue, family-friendly finish.</p>
+      </details>
+      <details>
+        <summary>Do you remove pet odors and stains?</summary>
+        <p>Yes. Enzyme treatments target urine crystals and odor sources, followed by hot water extraction for a fresh, neutral result.</p>
+      </details>
+      <details>
+        <summary>Do you service condos and high-rises?</summary>
+        <p>Absolutely. Our portable equipment and scheduling make access straightforward for high-rises across Miami, Miami Beach, Aventura, and Sunny Isles.</p>
+      </details>
     </div>
   </section>
 
   <footer class="site-footer">
-  <div class="wrap">
-    <nav class="footer-areas" aria-label="Areas we serve">
-      <h2>Areas we serve</h2>
-      <div class="areas-grid">
-        <div>
-          <h3>Carpet Cleaning</h3>
-          <ul>
-            <li><a href="/carpet-cleaning/">All Areas</a></li>
-            <li><a href="/carpet-cleaning-miami/">Miami</a></li>
-            <li><a href="/carpet-cleaning-miami-beach/
-">Miami Beach</a></li>
-            <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
-            <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
-            <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
-            <li><a href="/carpet-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-          </ul>
+    <div class="wrap">
+      <nav class="footer-areas" aria-label="Areas we serve">
+        <h2>Areas we serve</h2>
+        <div class="areas-grid">
+          <div>
+            <h3>Carpet Cleaning</h3>
+            <ul>
+              <li><a href="/carpet-cleaning/">All Areas</a></li>
+              <li><a href="/carpet-cleaning-miami/">Miami</a></li>
+              <li><a href="/carpet-cleaning-miami-beach/">Miami Beach</a></li>
+              <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
+              <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
+              <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
+              <li><a href="/carpet-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Upholstery Cleaning</h3>
+            <ul>
+              <li><a href="/upholstery-cleaning/">All Areas</a></li>
+              <li><a href="/upholstery-cleaning-miami/">Miami</a></li>
+              <li><a href="/upholstery-cleaning-miami-beach/">Miami Beach</a></li>
+              <li><a href="/upholstery-cleaning-aventura/">Aventura</a></li>
+              <li><a href="/upholstery-cleaning-sunny-isles/">Sunny Isles</a></li>
+              <li><a href="/upholstery-cleaning-hollywood/">Hollywood</a></li>
+              <li><a href="/upholstery-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Rug Cleaning</h3>
+            <ul>
+              <li><a href="/rug-cleaning/">All Areas</a></li>
+              <li><a href="/rug-cleaning-miami/">Miami</a></li>
+              <li><a href="/rug-cleaning-miami-beach/">Miami Beach</a></li>
+              <li><a href="/rug-cleaning-aventura/">Aventura</a></li>
+              <li><a href="/rug-cleaning-sunny-isles/">Sunny Isles</a></li>
+              <li><a href="/rug-cleaning-hollywood/">Hollywood</a></li>
+              <li><a href="/rug-cleaning-pembroke-pines/">Pembroke Pines</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3>Upholstery Cleaning</h3>
-          <ul>
-            <li><a href="/upholstery-cleaning/">All Areas</a></li>
-            <li><a href="/upholstery-cleaning-miami/">Miami</a></li>
-            <li><a href="/upholstery-cleaning-miami-beach/">Miami Beach</a></li>
-            <li><a href="/upholstery-cleaning-aventura/">Aventura</a></li>
-            <li><a href="/upholstery-cleaning-sunny-isles/">Sunny Isles</a></li>
-            <li><a href="/upholstery-cleaning-hollywood/">Hollywood</a></li>
-            <li><a href="/upholstery-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Rug Cleaning</h3>
-          <ul>
-            <li><a href="/rug-cleaning/">All Areas</a></li>
-            <li><a href="/rug-cleaning-miami/">Miami</a></li>
-            <li><a href="/rug-cleaning-miami-beach/">Miami Beach</a></li>
-            <li><a href="/rug-cleaning-aventura/">Aventura</a></li>
-            <li><a href="/rug-cleaning-sunny-isles/">Sunny Isles</a></li>
-            <li><a href="/rug-cleaning-hollywood/">Hollywood</a></li>
-            <li><a href="/rug-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
 
-    <address class="nap">
-      <strong>Smart Brite Cleaning Services</strong><br>
-      Miami, FL • Service Area: Kendall → Boca Raton<br>
-      <a href="tel:+17865834811" id="tel-link">(786) 583-4811</a> •
-      <a href="mailto:info@sbcleanmiami.com" id="email-link">info@sbcleanmiami.com</a> •
-      <a id="review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a><br>
-      Mon–Mon 8:00AM–9:00PM
-    </address>
-    <small>© <span id="y"></span> Smart Brite Cleaning Services. All rights reserved.</small>
-  </div>
-</footer>
-  <!-- Floating Call Button -->
-<a id="call-fab" class="call-fab" href="tel:+17865834811" aria-label="Call Smart Brite">
-  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
-  </svg>
-  <span class="sr-only">Call (786) 583-4811</span>
-</a>
+      <address class="nap">
+        <strong>Smart Brite Cleaning Services</strong><br>
+        Miami, FL • Service Area: Kendall → Boca Raton<br>
+        <a href="tel:+17865834811" id="tel-link">(786) 583-4811</a> •
+        <a href="mailto:info@sbcleanmiami.com" id="email-link">info@sbcleanmiami.com</a> •
+        <a id="review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a><br>
+        Mon–Mon 8:00AM–9:00PM
+      </address>
+      <small>© <span id="y"></span> Smart Brite Cleaning Services. All rights reserved.</small>
+    </div>
+  </footer>
 
-
+  <!-- Floating Call Button (preserved) -->
+  <a id="call-fab" class="call-fab" href="tel:+17865834811" aria-label="Call Smart Brite">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+      <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
+    </svg>
+    <span class="sr-only">Call (786) 583-4811</span>
+  </a>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
-  <!-- JSON-LD: Service + FAQ + Breadcrumbs (no LocalBusiness here; it already exists on home) -->
+  <!-- JSON-LD: Service (enriched with natural keyword variants) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Service",
     "serviceType":"Carpet cleaning",
-    "name":"Carpet Cleaning",
-    "provider":{"@type":"LocalBusiness","name":"Smart Brite Cleaning Services","url":"https://sbcleanmiami.com/"},
-    "areaServed":["Miami","Miami Beach","Aventura","Sunny Isles","Hollywood","Pembroke Pines"],
+    "name":"Carpet Cleaning (Miami Metro)",
+    "provider":{
+      "@type":"LocalBusiness",
+      "name":"Smart Brite Cleaning Services",
+      "url":"https://sbcleanmiami.com/",
+      "areaServed":["Miami, FL","Miami Beach, FL","Aventura, FL","Sunny Isles, FL","Hollywood, FL","Pembroke Pines, FL"],
+      "telephone":"+1-786-583-4811"
+    },
+    "areaServed":["Miami, FL","Miami Beach, FL","Aventura, FL","Sunny Isles, FL","Hollywood, FL","Pembroke Pines, FL"],
     "url":"https://sbcleanmiami.com/carpet-cleaning/",
-    "description":"Eco-friendly carpet cleaning with fast drying across the Miami metro."
+    "description":"Professional carpet cleaning across the Miami metro: steam carpet cleaning, deep extraction, pet odor & stain removal, condo and commercial carpet cleaning. Licensed & insured.",
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Carpet Cleaning Services",
+      "itemListElement":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Steam carpet cleaning"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Deep carpet cleaning"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial carpet cleaning"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pet odor & stain removal"}}
+      ]
+    }
   }
   </script>
+
+  <!-- JSON-LD: FAQPage (expanded for long-tail capture) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {"@type":"Question","name":"How long does carpet take to dry?","acceptedAnswer":{"@type":"Answer","text":"Typically 2–6 hours depending on ventilation and humidity."}},
-      {"@type":"Question","name":"Are your products safe for kids and pets?","acceptedAnswer":{"@type":"Answer","text":"Yes—eco-friendly solutions used as directed."}},
-      {"@type":"Question","name":"Do you remove pet odors and stains?","acceptedAnswer":{"@type":"Answer","text":"We use targeted enzymes and techniques; results vary by carpet type and severity."}}
+      {
+        "@type":"Question",
+        "name":"How long does carpet take to dry after steam cleaning?",
+        "acceptedAnswer":{"@type":"Answer","text":"Most carpets dry in 3–6 hours depending on ventilation, humidity, and pile density. High-CFM extraction and airflow help speed drying."}
+      },
+      {
+        "@type":"Question",
+        "name":"Are your carpet cleaning products safe for kids and pets?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. We use eco-friendly detergents and a neutralizing rinse for a low-residue, family-friendly finish."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do you remove pet odors and stains?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Enzyme treatments target urine crystals and odors, followed by hot water extraction for lasting freshness."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do you clean carpets in condos and high-rises?",
+        "acceptedAnswer":{"@type":"Answer","text":"Absolutely. We service Miami, Miami Beach, Aventura, Sunny Isles, Hollywood, and Pembroke Pines with portable equipment suitable for high-rises."}
+      }
     ]
   }
   </script>
+
+  <!-- JSON-LD: BreadcrumbList (preserved) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
