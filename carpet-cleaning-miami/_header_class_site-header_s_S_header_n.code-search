@@ -1,0 +1,601 @@
+# Query: <header[^>]*class="site-header"[^>]*>[\\s\\S]*?<\\/header>\\n
+# Flags: RegExp
+# ContextLines: 1
+
+41 results - 41 files
+
+index.html:
+   65  <body>
+   66:   <header class="site-header">
+   67:   <div class="wrap">
+   68:     <a class="logo" href="/">Smart Brite Cleaning Services</a>
+   69:     <nav class="nav" aria-label="Primary">
+   70:       <!-- Services mega menu -->
+   71:       <details class="mega compact">
+   72:         <summary aria-haspopup="true" aria-expanded="false">Services</summary>
+   73:         <div class="mega-panel" role="menu">
+   74:           <div class="mega-grid">
+   75:             <!-- Carpet Cleaning column -->
+   76:             <div class="mega-col">
+   77:               <h3>Carpet Cleaning</h3>
+   78:               <ul>
+   79:                 <li><a href="/carpet-cleaning/">All Areas</a></li>
+   80:                 <li><a href="/carpet-cleaning/miami/">Miami</a></li>
+   81:                 <li><a href="/carpet-cleaning/miami-beach/">Miami Beach</a></li>
+   82:                 <li><a href="/carpet-cleaning/aventura/">Aventura</a></li>
+   83:                 <li><a href="/carpet-cleaning/sunny-isles/">Sunny Isles</a></li>
+   84:                 <li><a href="/carpet-cleaning/hollywood/">Hollywood</a></li>
+   85:                 <li><a href="/carpet-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+   86:               </ul>
+   87:             </div>
+   88:             <!-- Upholstery Cleaning column -->
+   89:             <div class="mega-col">
+   90:               <h3>Upholstery Cleaning</h3>
+   91:               <ul>
+   92:                 <li><a href="/upholstery-cleaning/">All Areas</a></li>
+   93:                 <li><a href="/upholstery-cleaning/miami/">Miami</a></li>
+   94:                 <li><a href="/upholstery-cleaning/miami-beach/">Miami Beach</a></li>
+   95:                 <li><a href="/upholstery-cleaning/aventura/">Aventura</a></li>
+   96:                 <li><a href="/upholstery-cleaning/sunny-isles/">Sunny Isles</a></li>
+   97:                 <li><a href="/upholstery-cleaning/hollywood/">Hollywood</a></li>
+   98:                 <li><a href="/upholstery-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+   99:               </ul>
+  100:             </div>
+  101:             <!-- Rug Cleaning column -->
+  102:             <div class="mega-col">
+  103:               <h3>Rug Cleaning</h3>
+  104:               <ul>
+  105:                 <li><a href="/rug-cleaning/">All Areas</a></li>
+  106:                 <li><a href="/rug-cleaning/miami/">Miami</a></li>
+  107:                 <li><a href="/rug-cleaning/miami-beach/">Miami Beach</a></li>
+  108:                 <li><a href="/rug-cleaning/aventura/">Aventura</a></li>
+  109:                 <li><a href="/rug-cleaning/sunny-isles/">Sunny Isles</a></li>
+  110:                 <li><a href="/rug-cleaning/hollywood/">Hollywood</a></li>
+  111:                 <li><a href="/rug-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+  112:               </ul>
+  113:             </div>
+  114:           </div>
+  115:         </div>
+  116:       </details>
+  117: 
+  118:       <!-- Keep your other top-level links -->
+  119:       <a href="/areas/">Service Areas</a>
+  120:       <a href="/blog/">Blog</a>
+  121:       <a href="/#contact">Contact</a>
+  122:     </nav>
+  123:   </div>
+  124: </header>
+  125: 
+  126  
+
+areas/boca-raton.html:
+  22  <body>
+  23:   <header class="site-header">
+  24:     <div class="wrap">
+  25:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  26:       <nav class="nav">
+  27:         <a href="/services/">Services</a>
+  28:         <a href="/areas/">Service Areas</a>
+  29:         <a href="/blog/">Blog</a>
+  30:         <a href="/#contact">Contact</a>
+  31:       </nav>
+  32:     </div>
+  33:   </header>
+  34: 
+  35    <main class="hero">
+
+areas/index.html:
+  22  <body>
+  23:   <header class="site-header">
+  24:     <div class="wrap">
+  25:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  26:       <nav class="nav">
+  27:         <a href="/services/">Services</a>
+  28:         <a href="/areas/">Service Areas</a>
+  29:         <a href="/blog/">Blog</a>
+  30:         <a href="/#contact">Contact</a>
+  31:       </nav>
+  32:     </div>
+  33:   </header>
+  34: 
+  35    <main class="hero">
+
+areas/miami.html:
+  22  <body>
+  23:   <header class="site-header">
+  24:     <div class="wrap">
+  25:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  26:       <nav class="nav">
+  27:         <a href="/services/">Services</a>
+  28:         <a href="/areas/">Service Areas</a>
+  29:         <a href="/blog/">Blog</a>
+  30:         <a href="/#contact">Contact</a>
+  31:       </nav>
+  32:     </div>
+  33:   </header>
+  34: 
+  35    <main class="hero">
+
+carpet-cleaning/index.html:
+  62  <body>
+  63:   <header class="site-header">
+  64:     <div class="wrap">
+  65:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  66:       <nav class="nav">
+  67:         <a href="/services/">Services</a>
+  68:         <a href="/areas/">Service Areas</a>
+  69:         <a href="/blog/">Blog</a>
+  70:         <a href="/#contact">Contact</a>
+  71:       </nav>
+  72:     </div>
+  73:   </header>
+  74: 
+  75    <main class="hero">
+
+carpet-cleaning/aventura/index.html:
+  62  <body>
+  63:   <header class="site-header">
+  64:     <div class="wrap">
+  65:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  66:       <nav class="nav">
+  67:         <a href="/services/">Services</a>
+  68:         <a href="/areas/">Service Areas</a>
+  69:         <a href="/blog/">Blog</a>
+  70:         <a href="/#contact">Contact</a>
+  71:       </nav>
+  72:     </div>
+  73:   </header>
+  74: 
+  75    <main class="hero">
+
+carpet-cleaning/hollywood/index.html:
+  62  <body>
+  63:   <header class="site-header">
+  64:     <div class="wrap">
+  65:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  66:       <nav class="nav">
+  67:         <a href="/services/">Services</a>
+  68:         <a href="/areas/">Service Areas</a>
+  69:         <a href="/blog/">Blog</a>
+  70:         <a href="/#contact">Contact</a>
+  71:       </nav>
+  72:     </div>
+  73:   </header>
+  74: 
+  75    <main class="hero">
+
+carpet-cleaning/miami/index.html:
+  64  <body>
+  65:   <header class="site-header">
+  66:     <div class="wrap">
+  67:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  68:       <nav class="nav">
+  69:         <a href="/services/">Services</a>
+  70:         <a href="/areas/">Service Areas</a>
+  71:         <a href="/blog/">Blog</a>
+  72:         <a href="/#contact">Contact</a>
+  73:       </nav>
+  74:     </div>
+  75:   </header>
+  76: 
+  77    <main class="hero">
+
+carpet-cleaning/miami-beach/index.html:
+  60  <body>
+  61:   <header class="site-header">
+  62:     <div class="wrap">
+  63:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  64:       <nav class="nav">
+  65:         <a href="/services/">Services</a>
+  66:         <a href="/areas/">Service Areas</a>
+  67:         <a href="/blog/">Blog</a>
+  68:         <a href="/#contact">Contact</a>
+  69:       </nav>
+  70:     </div>
+  71:   </header>
+  72: 
+  73    <main class="hero">
+
+carpet-cleaning/pembroke-pines/index.html:
+  60  <body>
+  61:   <header class="site-header">
+  62:     <div class="wrap">
+  63:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  64:       <nav class="nav">
+  65:         <a href="/services/">Services</a>
+  66:         <a href="/areas/">Service Areas</a>
+  67:         <a href="/blog/">Blog</a>
+  68:         <a href="/#contact">Contact</a>
+  69:       </nav>
+  70:     </div>
+  71:   </header>
+  72: 
+  73    <main class="hero">
+
+carpet-cleaning/sunny-isles/index.html:
+  60  <body>
+  61:   <header class="site-header">
+  62:     <div class="wrap">
+  63:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  64:       <nav class="nav">
+  65:         <a href="/services/">Services</a>
+  66:         <a href="/areas/">Service Areas</a>
+  67:         <a href="/blog/">Blog</a>
+  68:         <a href="/#contact">Contact</a>
+  69:       </nav>
+  70:     </div>
+  71:   </header>
+  72: 
+  73    <main class="hero">
+
+rug-cleaning/index.html:
+  29  <body>
+  30:   <header class="site-header">
+  31:     <div class="wrap">
+  32:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  33:       <nav class="nav">
+  34:         <a href="/services/">Services</a>
+  35:         <a href="/areas/">Service Areas</a>
+  36:         <a href="/blog/">Blog</a>
+  37:         <a href="/#contact">Contact</a>
+  38:       </nav>
+  39:     </div>
+  40:   </header>
+  41: 
+  42    <main class="hero">
+
+rug-cleaning/aventura/index.html:
+  13  </head><body>
+  14: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  15: 
+  16  <main class="hero"><div class="wrap">
+
+rug-cleaning/hollywood/index.html:
+  13  </head><body>
+  14: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  15: 
+  16  <main class="hero"><div class="wrap">
+
+rug-cleaning/miami/index.html:
+  29  <body>
+  30:   <header class="site-header">
+  31:     <div class="wrap">
+  32:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  33:       <nav class="nav">
+  34:         <a href="/services/">Services</a>
+  35:         <a href="/areas/">Service Areas</a>
+  36:         <a href="/blog/">Blog</a>
+  37:         <a href="/#contact">Contact</a>
+  38:       </nav>
+  39:     </div>
+  40:   </header>
+  41: 
+  42    <main class="hero">
+
+rug-cleaning/miami-beach/index.html:
+  13  </head><body>
+  14: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  15: 
+  16  <main class="hero"><div class="wrap">
+
+rug-cleaning/pembroke-pines/index.html:
+  13  </head><body>
+  14: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  15: 
+  16  <main class="hero"><div class="wrap">
+
+rug-cleaning/sunny-isles/index.html:
+  13  </head><body>
+  14: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  15: 
+  16  <main class="hero"><div class="wrap">
+
+services/air-duct-cleaning.html:
+  33  <body>
+  34:   <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  35:   <main class="hero"><div class="wrap"><h1>Air Duct Cleaning in Miami</h1>
+  36  <p>Improve indoor air quality and reduce dust and allergens with professional air duct and HVAC vent cleaning. Residential and commercial service from Kendall to Boca Raton. <a href="/#contact">Get a free quote</a>.</p>
+
+services/carpet-cleaning.html:
+  29  <body>
+  30:   <header class="site-header">
+  31:     <div class="wrap">
+  32:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  33:       <nav class="nav">
+  34:         <a href="/services/">Services</a>
+  35:         <a href="/areas/">Service Areas</a>
+  36:         <a href="/blog/">Blog</a>
+  37:         <a href="/#contact">Contact</a>
+  38:       </nav>
+  39:     </div>
+  40:   </header>
+  41: 
+  42    <main class="hero">
+
+services/index.html:
+  21  <body>
+  22:   <header class="site-header">
+  23:     <div class="wrap">
+  24:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  25:       <nav class="nav">
+  26:         <a href="/services/">Services</a>
+  27:         <a href="/areas/">Service Areas</a>
+  28:         <a href="/blog/">Blog</a>
+  29:         <a href="/#contact">Contact</a>
+  30:       </nav>
+  31:     </div>
+  32:   </header>
+  33: 
+  34    <main class="hero">
+
+services/mattress-cleaning.html:
+  32  <body>
+  33:   <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  34:   <main class="hero"><div class="wrap"><h1>Mattress Cleaning in Miami</h1>
+  35  <p>Eco-friendly cleaning to remove stains, sweat, allergens, and odors. Fast drying and safe for families. Serving Kendall to Boca Raton. <a href="/#contact">Get a free quote</a>.</p>
+
+services/pet-odor-removal.html:
+  30  <body>
+  31:   <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  32:   <main class="hero"><div class="wrap"><h1>Pet Odor Removal in Miami</h1>
+  33  <p>Targeted enzyme treatments to remove pet urine odors and stains from carpets and upholstery. Eco-friendly methods and fast drying. Serving Kendall to Boca Raton. <a href="/#contact">Get a free quote</a>.</p>
+
+services/rug-cleaning.html:
+  33  <body>
+  34:   <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  35:   <main class="hero"><div class="wrap"><h1>Rug Cleaning in Miami</h1>
+  36  <p>Expert cleaning for area, oriental, wool, and synthetic rugs. Eco-friendly products and fast drying. Serving Kendall to Boca Raton. <a href="/#contact">Get a free quote</a>.</p>
+
+services/upholstery-cleaning.html:
+  29  <body>
+  30:   <header class="site-header">
+  31:     <div class="wrap">
+  32:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  33:       <nav class="nav">
+  34:         <a href="/services/">Services</a>
+  35:         <a href="/areas/">Service Areas</a>
+  36:         <a href="/blog/">Blog</a>
+  37:         <a href="/#contact">Contact</a>
+  38:       </nav>
+  39:     </div>
+  40:   </header>
+  41: 
+  42    <main class="hero">
+
+services/water-damage-restoration.html:
+  32  <body>
+  33:   <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  34:   <main class="hero"><div class="wrap"><h1>Water Damage Restoration in Miami</h1>
+  35  <p>Emergency extraction, dry-out, deodorizing, and cleanup for homes and businesses. Fast response across the Miami metro. <a href="/#contact">Get a free quote</a>.</p>
+
+services/carpet-cleaning/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/aventura/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/hollywood/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/miami/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/miami-beach/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/pembroke-pines/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+services/carpet-cleaning/sunny-isles/index.html:
+  28  <body>
+  29:   <header class="site-header">
+  30:     <div class="wrap">
+  31:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  32:       <nav class="nav">
+  33:         <a href="/services/">Services</a>
+  34:         <a href="/areas/">Service Areas</a>
+  35:         <a href="/blog/">Blog</a>
+  36:         <a href="/#contact">Contact</a>
+  37:       </nav>
+  38:     </div>
+  39:   </header>
+  40: 
+  41    <main class="hero">
+
+snippets/header.compact.html:
+   1: <header class="site-header">
+   2:   <div class="wrap">
+   3:     <a class="logo" href="/">Smart Brite Cleaning Services</a>
+   4:     <nav class="nav" aria-label="Primary">
+   5:       <!-- Services compact dropdown -->
+   6:       <details class="mega compact">
+   7:         <summary aria-haspopup="true" aria-expanded="false">Services</summary>
+   8:         <div class="mega-panel" role="menu">
+   9:           <div class="mega-grid">
+  10:             <div class="mega-col">
+  11:               <h3>Carpet Cleaning</h3>
+  12:               <ul>
+  13:                 <li><a href="/carpet-cleaning/">All Areas</a></li>
+  14:                 <li><a href="/carpet-cleaning/miami/">Miami</a></li>
+  15:                 <li><a href="/carpet-cleaning/miami-beach/">Miami Beach</a></li>
+  16:                 <li><a href="/carpet-cleaning/aventura/">Aventura</a></li>
+  17:                 <li><a href="/carpet-cleaning/sunny-isles/">Sunny Isles</a></li>
+  18:                 <li><a href="/carpet-cleaning/hollywood/">Hollywood</a></li>
+  19:                 <li><a href="/carpet-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+  20:               </ul>
+  21:             </div>
+  22:             <div class="mega-col">
+  23:               <h3>Upholstery Cleaning</h3>
+  24:               <ul>
+  25:                 <li><a href="/upholstery-cleaning/">All Areas</a></li>
+  26:                 <li><a href="/upholstery-cleaning/miami/">Miami</a></li>
+  27:                 <li><a href="/upholstery-cleaning/miami-beach/">Miami Beach</a></li>
+  28:                 <li><a href="/upholstery-cleaning/aventura/">Aventura</a></li>
+  29:                 <li><a href="/upholstery-cleaning/sunny-isles/">Sunny Isles</a></li>
+  30:                 <li><a href="/upholstery-cleaning/hollywood/">Hollywood</a></li>
+  31:                 <li><a href="/upholstery-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+  32:               </ul>
+  33:             </div>
+  34:             <div class="mega-col">
+  35:               <h3>Rug Cleaning</h3>
+  36:               <ul>
+  37:                 <li><a href="/rug-cleaning/">All Areas</a></li>
+  38:                 <li><a href="/rug-cleaning/miami/">Miami</a></li>
+  39:                 <li><a href="/rug-cleaning/miami-beach/">Miami Beach</a></li>
+  40:                 <li><a href="/rug-cleaning/aventura/">Aventura</a></li>
+  41:                 <li><a href="/rug-cleaning/sunny-isles/">Sunny Isles</a></li>
+  42:                 <li><a href="/rug-cleaning/hollywood/">Hollywood</a></li>
+  43:                 <li><a href="/rug-cleaning/pembroke-pines/">Pembroke Pines</a></li>
+  44:               </ul>
+  45:             </div>
+  46:           </div>
+  47:         </div>
+  48:       </details>
+  49: 
+  50:       <a href="/areas/">Service Areas</a>
+  51:       <a href="/blog/">Blog</a>
+  52:       <a href="/#contact">Contact</a>
+  53:     </nav>
+  54:   </div>
+  55: </header>
+  56: 
+
+upholstery-cleaning/index.html:
+  31  <body>
+  32:   <header class="site-header">
+  33:     <div class="wrap">
+  34:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  35:       <nav class="nav">
+  36:         <a href="/services/">Services</a>
+  37:         <a href="/areas/">Service Areas</a>
+  38:         <a href="/blog/">Blog</a>
+  39:         <a href="/#contact">Contact</a>
+  40:       </nav>
+  41:     </div>
+  42:   </header>
+  43: 
+  44    <main class="hero">
+
+upholstery-cleaning/aventura/index.html:
+  18  </head><body>
+  19: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  20: 
+  21  <main class="hero"><div class="wrap">
+
+upholstery-cleaning/hollywood/index.html:
+  18  </head><body>
+  19: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  20: 
+  21  <main class="hero"><div class="wrap">
+
+upholstery-cleaning/miami/index.html:
+  31  <body>
+  32:   <header class="site-header">
+  33:     <div class="wrap">
+  34:       <a class="logo" href="/">Smart Brite Cleaning Services</a>
+  35:       <nav class="nav">
+  36:         <a href="/services/">Services</a>
+  37:         <a href="/areas/">Service Areas</a>
+  38:         <a href="/blog/">Blog</a>
+  39:         <a href="/#contact">Contact</a>
+  40:       </nav>
+  41:     </div>
+  42:   </header>
+  43: 
+  44    <main class="hero">
+
+upholstery-cleaning/miami-beach/index.html:
+  18  </head><body>
+  19: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  20: 
+  21  <main class="hero"><div class="wrap">
+
+upholstery-cleaning/pembroke-pines/index.html:
+  18  </head><body>
+  19: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  20: 
+  21  <main class="hero"><div class="wrap">
+
+upholstery-cleaning/sunny-isles/index.html:
+  18  </head><body>
+  19: <header class="site-header"><div class="wrap"><a class="logo" href="/">Smart Brite Cleaning Services</a><nav class="nav"><a href="/services/">Services</a><a href="/areas/">Service Areas</a><a href="/blog/">Blog</a><a href="/#contact">Contact</a></nav></div></header>
+  20: 
+  21  <main class="hero"><div class="wrap">
