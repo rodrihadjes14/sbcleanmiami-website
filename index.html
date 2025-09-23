@@ -4,80 +4,64 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- SEO for Home -->
-<title>Smart Brite Cleaning Services | Carpet & Upholstery Cleaning in Miami</title>
-<meta name="description" content="Eco-friendly carpet, upholstery and rug cleaning with fast drying across Miami — from Kendall to Boca Raton. Pet odor removal, mattress, air duct & water damage restoration. Free quotes." />
-<link rel="canonical" href="https://sbcleanmiami.com/" />
+  <title>Smart Brite Cleaning Services | Carpet, Upholstery & Rug Cleaning Miami</title>
+  <meta name="description" content="Licensed & insured carpet, upholstery & rug cleaning in Miami. Eco-friendly, fast drying, pet odor & stain removal. Serving Kendall to Boca Raton. Free quotes." />
+  <link rel="canonical" href="https://sbcleanmiami.com/" />
 
-<!-- Open Graph (for sharing) -->
-<meta property="og:title" content="Smart Brite Cleaning Services" />
-<meta property="og:description" content="Eco-friendly, fast-dry carpet & upholstery cleaning in Miami. Free quotes." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sbcleanmiami.com/" />
-<meta property="og:image" content="/images/og-default.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Smart Brite Cleaning Services | Miami Carpet & Upholstery Cleaning" />
+  <meta property="og:description" content="Eco-friendly carpet, upholstery & rug cleaning in Miami. Fast drying, pet odor removal, stain treatment. Free quotes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sbcleanmiami.com/" />
+  <meta property="og:image" content="/images/og-default.jpg" />
 
   <link rel="stylesheet" href="/assets/css/main.css" />
 
- <!-- Google tag (gtag.js) + call-click tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
-<script>
-(function () {
-  // GA4 base
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ window.dataLayer.push(arguments); }
-  window.gtag = window.gtag || gtag;
+  <!-- GA4 + call tracking (preserved) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FCPPRNBKJ"></script>
+  <script>
+  (function(){
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){window.dataLayer.push(arguments)}
+    window.gtag=window.gtag||gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
 
-  gtag('js', new Date());
-  gtag('config', 'G-5FCPPRNBKJ', { anonymize_ip: true });
-
-  // call-click tracking (works with or without GTM)
-  function emitCallEvent(target) {
-    var href = (target.getAttribute('href') || '').trim();   // e.g., tel:+17865834811
-    var id   = target.id || '';
-    var loc  = id === 'call-fab' ? 'floating_button'
-             : id === 'tel-link' ? 'footer_link'
-             : 'link';
-
-    if (Array.isArray(window.dataLayer)) {
-      window.dataLayer.push({ event: 'click_call', method: 'tel', phone: href, location: loc });
+    function emitCallEvent(t){
+      var h=(t.getAttribute('href')||'').trim(), id=t.id||'';
+      var loc = id==='call-fab' ? 'floating_button' : id==='tel-link' ? 'footer_link' : 'link';
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event:'click_call', method:'tel', phone:h, location:loc });
+      }
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'click_call', { method:'tel', phone:h, location:loc });
+      }
     }
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'click_call', { method: 'tel', phone: href, location: loc });
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var fab = document.getElementById('call-fab');
-    if (fab) fab.addEventListener('click', function () { emitCallEvent(fab); });
-
-    var links = document.querySelectorAll('a[href^="tel:"]');
-    links.forEach(function (a) {
-      if (a !== fab) a.addEventListener('click', function () { emitCallEvent(a); });
+    document.addEventListener('DOMContentLoaded', function(){
+      var fab=document.getElementById('call-fab');
+      if (fab) fab.addEventListener('click', function(){ emitCallEvent(fab); });
+      document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+        if (a!==fab) a.addEventListener('click', function(){ emitCallEvent(a); });
+      });
     });
-  });
-})();
-</script>
-
-
-
-
-
+  })();
+  </script>
 </head>
 <body>
-  <header class="site-header">
+<header class="site-header">
   <div class="wrap">
     <a class="logo" href="/">Smart Brite Cleaning Services</a>
     <nav class="nav" aria-label="Primary">
-      <!-- Services compact dropdown -->
       <details class="mega compact">
-        <summary aria-haspopup="true" aria-expanded="false">Services</summary>
+        <summary>Services</summary>
         <div class="mega-panel" role="menu">
           <div class="mega-grid">
             <div class="mega-col">
               <h3>Carpet Cleaning</h3>
               <ul>
                 <li><a href="/carpet-cleaning/">All Areas</a></li>
-                <li><a href="/carpet-cleaning-miami//">Miami</a></li>
-                <li><a href="/carpet-cleaning-miami-beach//">Miami Beach</a></li>
+                <li><a href="/carpet-cleaning-miami/">Miami</a></li>
+                <li><a href="/carpet-cleaning-miami-beach/">Miami Beach</a></li>
                 <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
                 <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
                 <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
@@ -111,7 +95,6 @@
           </div>
         </div>
       </details>
-
       <a href="/areas/">Service Areas</a>
       <a href="/blog/">Blog</a>
       <a href="/#contact">Contact</a>
@@ -119,181 +102,118 @@
   </div>
 </header>
 
-  <main class="hero">
-    <div class="wrap">
-      <h1>Eco-Friendly Carpet Cleaning in Miami (Kendall → Boca Raton)</h1>
-      <p>Fast-dry, low-cost cleaning for homes and businesses: carpet, couches, rugs, mattresses, air ducts, upholstery & water damage restoration.</p>
-      <a class="cta" href="#contact">Get a Free Quote</a>
-    </div>
-  </main>
-
-  <section class="overview">
+<main class="hero">
   <div class="wrap">
-    <h2>Carpet, Upholstery & Rug Cleaning Across Miami Metro</h2>
-    <p>Professional eco-friendly cleaning with fast drying times and transparent pricing. Choose your service and city:</p>
+    <h1>Carpet, Upholstery & Rug Cleaning in Miami</h1>
+    <p>Smart Brite provides <strong>eco-friendly carpet cleaning Miami</strong> homeowners and businesses trust. Our licensed & insured team delivers <strong>upholstery cleaning</strong>, <strong>rug cleaning</strong>, <strong>pet odor removal</strong>, and <strong>stain treatment</strong> with fast drying times from Kendall to Boca Raton.</p>
+    <a class="cta" href="#contact">Get a Free Quote</a>
+  </div>
+</main>
 
+<section class="overview">
+  <div class="wrap">
+    <h2>Professional Cleaning Services Across Miami Metro</h2>
+    <p>From <strong>carpet cleaning Miami Beach</strong> condos to <strong>rug cleaning Aventura</strong> and <strong>upholstery cleaning Pembroke Pines</strong>, our experts cover every city with eco-friendly products, transparent pricing, and proven results.</p>
     <div class="link-grid">
-      <div>
-        <h3>Carpet Cleaning</h3>
-        <ul>
-          <li><a href="/carpet-cleaning/">All Areas</a></li>
-          <li><a href="/carpet-cleaning-miami/">Miami</a></li>
-          <li><a href="/carpet-cleaning-miami-beach//
-">Miami Beach</a></li>
-          <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
-          <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
-          <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
-          <li><a href="/carpet-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Upholstery Cleaning</h3>
-        <ul>
-          <li><a href="/upholstery-cleaning/">All Areas</a></li>
-          <li><a href="/upholstery-cleaning-miami/">Miami</a></li>
-          <li><a href="/upholstery-cleaning-miami-beach/">Miami Beach</a></li>
-          <li><a href="/upholstery-cleaning-aventura/">Aventura</a></li>
-          <li><a href="/upholstery-cleaning-sunny-isles/">Sunny Isles</a></li>
-          <li><a href="/upholstery-cleaning-hollywood/">Hollywood</a></li>
-          <li><a href="/upholstery-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Rug Cleaning</h3>
-        <ul>
-          <li><a href="/rug-cleaning/">All Areas</a></li>
-          <li><a href="/rug-cleaning-miami/">Miami</a></li>
-          <li><a href="/rug-cleaning-miami-beach/">Miami Beach</a></li>
-          <li><a href="/rug-cleaning-aventura/">Aventura</a></li>
-          <li><a href="/rug-cleaning-sunny-isles/">Sunny Isles</a></li>
-          <li><a href="/rug-cleaning-hollywood/">Hollywood</a></li>
-          <li><a href="/rug-cleaning-pembroke-pines/">Pembroke Pines</a></li>
-        </ul>
-      </div>
+      <a class="card" href="/carpet-cleaning-miami/">Carpet Cleaning Miami</a>
+      <a class="card" href="/upholstery-cleaning-miami/">Upholstery Cleaning Miami</a>
+      <a class="card" href="/rug-cleaning-miami/">Rug Cleaning Miami</a>
+      <a class="card" href="/carpet-cleaning-miami-beach/">Carpet Cleaning Miami Beach</a>
+      <a class="card" href="/upholstery-cleaning-miami-beach/">Upholstery Cleaning Miami Beach</a>
+      <a class="card" href="/rug-cleaning-miami-beach/">Rug Cleaning Miami Beach</a>
+      <a class="card" href="/carpet-cleaning-aventura/">Carpet Cleaning Aventura</a>
+      <a class="card" href="/carpet-cleaning-sunny-isles/">Carpet Cleaning Sunny Isles</a>
+      <a class="card" href="/carpet-cleaning-hollywood/">Carpet Cleaning Hollywood</a>
+      <a class="card" href="/carpet-cleaning-pembroke-pines/">Carpet Cleaning Pembroke Pines</a>
     </div>
   </div>
 </section>
 
-
-
-  <section class="usp">
-    <div class="wrap">
-      <ul class="grid-3">
-        <li><strong>Eco-friendly</strong> products</li>
-        <li><strong>Fast drying</strong> times</li>
-        <li><strong>Low-cost</strong> packages</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="wrap">
-      <h2>Our Services</h2>
-      <ul class="grid-4">
-    <li><a href="/services/carpet-cleaning.html">Carpet Cleaning</a></li>
-    <li><a href="/services/upholstery-cleaning.html">Upholstery & Couch Cleaning</a></li>
-    <li><a href="/services/rug-cleaning.html">Rug Cleaning</a></li>
-    <li><a href="/services/pet-odor-removal.html">Pet Odor Removal</a></li>
-    <li><a href="/services/mattress-cleaning.html">Mattress Cleaning</a></li>
-    <li><a href="/services/air-duct-cleaning.html">Air Duct Cleaning</a></li>
-    <li><a href="/services/water-damage-restoration.html">Water Damage Restoration</a></li>
+<section class="usp">
+  <div class="wrap">
+    <ul class="grid-3">
+      <li><strong>Eco-friendly</strong> cleaning solutions</li>
+      <li><strong>Fast drying</strong> technology</li>
+      <li><strong>Licensed & insured</strong> local team</li>
     </ul>
+  </div>
+</section>
 
-    </div>
-  </section>
+<section class="services">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <ul class="grid-4">
+      <li><a href="/carpet-cleaning/">Carpet Cleaning</a></li>
+      <li><a href="/upholstery-cleaning/">Upholstery & Couch Cleaning</a></li>
+      <li><a href="/rug-cleaning/">Rug Cleaning</a></li>
+      <li><a href="/services/pet-odor-removal.html">Pet Odor & Stain Removal</a></li>
+      <li><a href="/services/mattress-cleaning.html">Mattress Cleaning</a></li>
+      <li><a href="/services/air-duct-cleaning.html">Air Duct Cleaning</a></li>
+      <li><a href="/services/water-damage-restoration.html">Water Damage Restoration</a></li>
+    </ul>
+  </div>
+</section>
 
-  <section class="areas">
-    <div class="wrap">
-      <h2>Service Areas</h2>
-      <p>Miami Metro: Kendall, Coral Gables, Doral, Downtown Miami, Miami Beach, Aventura, Hollywood, Fort Lauderdale, Pompano Beach, Boca Raton.</p>
-      <a class="cta secondary" href="/areas/">See all areas</a>
-    </div>
-  </section>
+<section class="areas">
+  <div class="wrap">
+    <h2>Service Areas</h2>
+    <p>We proudly serve Miami, Kendall, Coral Gables, Doral, Downtown, Miami Beach, Aventura, Sunny Isles, Hollywood, Pembroke Pines, Fort Lauderdale, Pompano Beach & Boca Raton.</p>
+    <a class="cta secondary" href="/areas/">See all areas</a>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>FAQs</h2>
+    <details>
+      <summary>How long does carpet or upholstery take to dry?</summary>
+      <p>Most carpets and sofas dry in 2–6 hours depending on fiber type, ventilation, and humidity. We use low-residue chemistry to speed drying.</p>
+    </details>
+    <details>
+      <summary>Are your cleaning products eco-friendly and safe for pets?</summary>
+      <p>Yes. We select eco-friendly solutions and always pre-test fabrics. Enzyme options are available for <strong>pet odor removal</strong>.</p>
+    </details>
+    <details>
+      <summary>Do you service condos and high-rises in Miami and Miami Beach?</summary>
+      <p>Yes. Our setup is condo-friendly—we follow building access rules and use elevator-safe equipment.</p>
+    </details>
+    <details>
+      <summary>Can you remove tough stains?</summary>
+      <p>We perform targeted <strong>stain treatment</strong> during cleaning. While results depend on fiber and stain age, we’ll set expectations upfront.</p>
+    </details>
+    <details>
+      <summary>Do you offer free quotes?</summary>
+      <p>Yes—call <a href="tel:+17865834811" id="tel-link">(786) 583-4811</a> or use the form below for a fast, no-obligation estimate.</p>
+    </details>
+  </div>
+</section>
 
-    <div class="wrap">
-  <h2>Contact Us</h2>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact Us</h2>
+    <form action="/forms/contact" method="post">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" />
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option>Carpet Cleaning</option>
+        <option>Upholstery Cleaning</option>
+        <option>Rug Cleaning</option>
+        <option>Pet Odor & Stain Removal</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us about your home or business, rooms or items, and preferred dates."></textarea>
+      <button type="submit" class="cta">Request Quote</button>
+    </form>
+    <p class="review-cta">Happy with our work? <a id="contact-review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a>.</p>
+  </div>
+</section>
 
-  <!-- Hidden iframe keeps users on your site-->
-  <iframe name="gform_iframe" id="gform_iframe" style="display:none;"></iframe>
-
-
-  <form id="lead-form"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfRH6T1d97ekw0qXA_m_IA_yPztmIEEr1sCWXDbhDOFC9fEGw/formResponse"
-        method="POST"
-        target="gform_iframe"
-        accept-charset="UTF-8"
-        onsubmit="window.__gformSubmitted = true;">
-
-       <div id="form-note" class="form-note" role="status" aria-live="polite" tabindex="-1" hidden>
-  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M9 16.17l-3.88-3.88a1 1 0 10-1.41 1.41l4.59 4.59a1 1 0 001.41 0l9.59-9.59a1 1 0 10-1.41-1.41L9 16.17z"/>
-  </svg>
-  <span>We will contact you soon.</span>
-</div>
-
-
-
-    <div class="form-grid">
-      <!-- Full Name -->
-      <label>Full Name
-        <input name="entry.1820962432" required placeholder="Your name">
-      </label>
-
-      <!-- Phone -->
-      <label>Phone
-        <input name="entry.1462304491" required placeholder="(305) 123-4567">
-      </label>
-
-      <!-- Email -->
-      <label>Email
-        <input type="email" name="entry.1622261796" placeholder="you@example.com">
-      </label>
-
-      <!-- ZIP Code -->
-      <label>ZIP Code
-        <input name="entry.117450539" placeholder="33101">
-      </label>
-
-      <!-- Service -->
-      <label>Service
-        <select name="entry.1390946669" required>
-          <option value="">Select a service…</option>
-          <option>Carpet Cleaning</option>
-          <option>Upholstery Cleaning</option>
-          <option>Rug Cleaning</option>
-          <option>Pet Odor Removal</option>
-          <option>Mattress Cleaning</option>
-          <option>Air Duct Cleaning</option>
-          <option>Water Damage Restoration</option>
-        </select>
-      </label>
-
-      <!-- Honeypot (ignored by Google Forms; helps reduce bot spam) -->
-      <div class="honeypot" aria-hidden="true">
-        <label>Website <input name="website" tabindex="-1" autocomplete="off"></label>
-      </div>
-
-      <button class="cta" type="submit">Get a Free Quote</button>
-    </div>
-  </form>
-</div>
-
-
-  <p class="review-cta">
-  Happy with our work? <a id="contact-review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a>.
-</p>
-
-  
-  
-</div>
-
-  </section>
-
-  <footer class="site-footer">
+<footer class="site-footer">
   <div class="wrap">
     <nav class="footer-areas" aria-label="Areas we serve">
       <h2>Areas we serve</h2>
@@ -303,8 +223,7 @@
           <ul>
             <li><a href="/carpet-cleaning/">All Areas</a></li>
             <li><a href="/carpet-cleaning-miami/">Miami</a></li>
-            <li><a href="/carpet-cleaning-miami-beach/
-">Miami Beach</a></li>
+            <li><a href="/carpet-cleaning-miami-beach/">Miami Beach</a></li>
             <li><a href="/carpet-cleaning-aventura/">Aventura</a></li>
             <li><a href="/carpet-cleaning-sunny-isles/">Sunny Isles</a></li>
             <li><a href="/carpet-cleaning-hollywood/">Hollywood</a></li>
@@ -339,157 +258,52 @@
     </nav>
 
     <address class="nap">
-      <strong>Smart Brite Cleaning Services</strong><br>
-      Miami, FL • Service Area: Kendall → Boca Raton<br>
+      <strong>Smart Brite Cleaning Services</strong><br />
+      Miami, FL • Service Area: Kendall → Boca Raton<br />
       <a href="tel:+17865834811" id="tel-link">(786) 583-4811</a> •
       <a href="mailto:info@sbcleanmiami.com" id="email-link">info@sbcleanmiami.com</a> •
-      <a id="review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a><br>
+      <a id="review-link" class="review-link" href="https://g.page/r/CU_VkC8UlCIqEAI/review" target="_blank" rel="noopener nofollow">Leave a Google review</a><br />
       Mon–Mon 8:00AM–9:00PM
     </address>
     <small>© <span id="y"></span> Smart Brite Cleaning Services. All rights reserved.</small>
   </div>
 </footer>
+
 <!-- Floating Call Button -->
 <a id="call-fab" class="call-fab" href="tel:+17865834811" aria-label="Call Smart Brite">
   <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
+    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1A17.5 17.5 0 012 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"></path>
   </svg>
   <span class="sr-only">Call (786) 583-4811</span>
 </a>
 
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
+<!-- JSON-LD LocalBusiness -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Smart Brite Cleaning Services","url":"https://sbcleanmiami.com/","image":"https://sbcleanmiami.com/images/og-default.jpg","telephone":"+1-786-583-4811","email":"info@sbcleanmiami.com","priceRange":"$$","description":"Carpet, upholstery & rug cleaning in Miami. Eco-friendly, fast drying, pet odor & stain removal. Licensed & insured, serving Kendall to Boca Raton.","areaServed":["Miami","Miami Beach","Aventura","Sunny Isles","Hollywood","Pembroke Pines","Fort Lauderdale","Boca Raton"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"21:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Cleaning Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning Miami","url":"https://sbcleanmiami.com/carpet-cleaning-miami/"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning Miami","url":"https://sbcleanmiami.com/upholstery-cleaning-miami/"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning Miami","url":"https://sbcleanmiami.com/rug-cleaning-miami/"}}]}}
+</script>
 
-
-
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://sbcleanmiami.com/#business",
-  "name": "Smart Brite Cleaning Services",
-  "url": "https://sbcleanmiami.com/",
-  "telephone": "+1-786-5834811",
-  "image": "https://sbcleanmiami.com/images/og-default.jpg",
-  "priceRange": "$$",
-  "description": "Eco-friendly carpet and upholstery cleaning with fast drying across the Miami metropolitan area.",
-  "areaServed": ["Miami","Kendall","Coral Gables","Doral","Miami Beach","Aventura","Hollywood","Fort Lauderdale","Pompano Beach","Boca Raton"],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Miami",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "08:00",
-    "closes": "18:00"
-  }],
-  "hasMap": "https://maps.app.goo.gl/g5vw4EV6zBu3edgn8",
-  "sameAs": [
-    "https://maps.app.goo.gl/g5vw4EV6zBu3edgn8"
-  ]
-}
+<!-- JSON-LD FAQPage -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How long does carpet or upholstery take to dry?","acceptedAnswer":{"@type":"Answer","text":"Most carpets and sofas dry in 2–6 hours depending on fiber type, ventilation, and humidity. We use low-residue chemistry to speed drying."}},
+  {"@type":"Question","name":"Are your cleaning products eco-friendly and safe for pets?","acceptedAnswer":{"@type":"Answer","text":"Yes. We select eco-friendly solutions and always pre-test fabrics. Enzyme options are available for pet odor removal."}},
+  {"@type":"Question","name":"Do you service condos and high-rises in Miami and Miami Beach?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our setup is condo-friendly—we follow building access rules and use elevator-safe equipment."}},
+  {"@type":"Question","name":"Can you remove tough stains?","acceptedAnswer":{"@type":"Answer","text":"We perform targeted stain treatment during cleaning. While results depend on fiber and stain age, we set expectations upfront."}},
+  {"@type":"Question","name":"Do you offer free quotes?","acceptedAnswer":{"@type":"Answer","text":"Yes—call (786) 583-4811 or use the website form for a fast, no-obligation estimate."}}
+]}
 </script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Smart Brite Cleaning Services",
-  "url": "https://sbcleanmiami.com/",
-  "image": "https://sbcleanmiami.com/images/og-default.jpg",
-  "telephone": "+1-786-583-4811",
-  "email": "info@sbcleanmiami.com",
-  "priceRange": "$$",
-  "areaServed": [
-    "Miami, FL",
-    "Miami Beach, FL",
-    "Aventura, FL",
-    "Sunny Isles, FL",
-    "Hollywood, FL",
-    "Pembroke Pines, FL"
-  ],
-  "serviceArea": [
-    {"@type":"City","name":"Miami"},
-    {"@type":"City","name":"Miami Beach"},
-    {"@type":"City","name":"Aventura"},
-    {"@type":"City","name":"Sunny Isles Beach"},
-    {"@type":"City","name":"Hollywood"},
-    {"@type":"City","name":"Pembroke Pines"}
-  ],
-  "sameAs": [
-    "https://maps.app.goo.gl/G8BwXhW6Kv56puvt5"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-786-583-4811",
-    "contactType": "customer service",
-    "areaServed": "US-FL"
-  },
-  "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"21:00"}
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Cleaning Services",
-    "itemListElement": [
-      {
-        "@type": "OfferCatalog",
-        "name": "Carpet Cleaning",
-        "itemListElement": [
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning - All Areas","url":"https://sbcleanmiami.com/carpet-cleaning/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Miami","url":"https://sbcleanmiami.com/carpet-cleaning-miami/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Miami Beach","url":"https://sbcleanmiami.com/carpet-cleaning-miami-beach/
-"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Aventura","url":"https://sbcleanmiami.com/carpet-cleaning-aventura/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Sunny Isles","url":"https://sbcleanmiami.com/carpet-cleaning-sunny-isles/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Hollywood","url":"https://sbcleanmiami.com/carpet-cleaning-hollywood/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpet Cleaning in Pembroke Pines","url":"https://sbcleanmiami.com/carpet-cleaning-pembroke-pines/"}}
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Upholstery Cleaning",
-        "itemListElement": [
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning - All Areas","url":"https://sbcleanmiami.com/upholstery-cleaning/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Miami","url":"https://sbcleanmiami.com/upholstery-cleaning-miami/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Miami Beach","url":"https://sbcleanmiami.com/upholstery-cleaning-miami-beach/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Aventura","url":"https://sbcleanmiami.com/upholstery-cleaning-aventura/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Sunny Isles","url":"https://sbcleanmiami.com/upholstery-cleaning-sunny-isles/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Hollywood","url":"https://sbcleanmiami.com/upholstery-cleaning-hollywood/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Upholstery Cleaning in Pembroke Pines","url":"https://sbcleanmiami.com/upholstery-cleaning-pembroke-pines/"}}
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Rug Cleaning",
-        "itemListElement": [
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning - All Areas","url":"https://sbcleanmiami.com/rug-cleaning/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Miami","url":"https://sbcleanmiami.com/rug-cleaning-miami/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Miami Beach","url":"https://sbcleanmiami.com/rug-cleaning-miami-beach/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Aventura","url":"https://sbcleanmiami.com/rug-cleaning-aventura/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Sunny Isles","url":"https://sbcleanmiami.com/rug-cleaning-sunny-isles/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Hollywood","url":"https://sbcleanmiami.com/rug-cleaning-hollywood/"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rug Cleaning in Pembroke Pines","url":"https://sbcleanmiami.com/rug-cleaning-pembroke-pines/"}}
-        ]
-      }
-    ]
-  }
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sbcleanmiami.com/" }
+  ]
 }
 </script>
-
-
-
-  <script>
-    // Year in footer
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-
-  <script src="/assets/js/main.js"></script>
-
-
-
 
 </body>
 </html>

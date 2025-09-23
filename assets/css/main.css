@@ -345,3 +345,11 @@ details[open] > .mega-panel { display: block; }
 .link-grid a:hover { text-decoration: underline; }
 @media (max-width: 900px){ .link-grid { grid-template-columns: 1fr; } }
 
+.breadcrumb { font-size: .875rem; margin: 8px 0 16px; }
+.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.breadcrumb li { display: inline-flex; align-items: center; }
+.breadcrumb li+li:before { content: "›"; margin: 0 .25rem; opacity: .6; }
+.breadcrumb a { text-decoration: none; }
+.breadcrumb [aria-current="page"] { color: inherit; font-weight: 600; text-decoration: none; }
+
+
