@@ -360,14 +360,19 @@ details[open] > .mega-panel { display: block; }
 /* Top-right phone link (desktop) */
 .header-tel {
   position: absolute;
-  top: 12px;          /* adjust to align with your header height */
+  top: 14px;
   right: 16px;
-  font-weight: 600;   /* match your brand text weight; change to 500/400 if needed */
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
   text-decoration: none;
-  line-height: 1;
-  display: inline-block;
-  padding: 8px 10px;  /* small hit area for accessibility */
-  border-radius: 6px; /* subtle rounding */
+  color: inherit;
+  border-radius: 6px;
+  z-index: 1100;
 }
 
 /* Hover/focus states */
@@ -376,26 +381,19 @@ details[open] > .mega-panel { display: block; }
   text-decoration: underline;
 }
 
-/* Make sure it sits above any dropdowns if needed */
-.header-tel {
-  z-index: 10;
-}
-
 /* Mobile treatment (stack if header is tall/narrow) */
 @media (max-width: 768px) {
   .header-tel {
     top: 10px;
     right: 12px;
-    font-size: 16px;
-    padding: 10px 12px;
+    padding: 12px 14px;
+    font-size: 1rem;
   }
 }
 
-/* If your header becomes multi-line on very small screens,
-   you can switch to in-flow layout for perfect wrapping. Optional: */
+/* Preserve right edge clearance on very small screens */
 @media (max-width: 480px) {
   .site-header .wrap {
-    padding-right: 110px; /* reserves space so the phone link doesn’t overlap */
+    padding-right: 120px;
   }
 }
-
